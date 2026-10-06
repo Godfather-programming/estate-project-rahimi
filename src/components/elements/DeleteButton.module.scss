@@ -1,0 +1,39 @@
+.delete {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        padding: 5px;
+        outline: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        font-size: 1rem;
+        height: 40px;
+        border: 2px solid #E53935;
+        color: #E53935;
+
+        .trash {
+            margin-top: 8px;
+        }
+}
+
+.eliminate {
+        margin-top: 20px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: fit-content;
+        color: #fafafa;
+        background-color: #EF5350;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}

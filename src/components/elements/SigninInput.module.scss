@@ -1,0 +1,24 @@
+@use '../../styles' as *;
+
+.information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+    label {
+        @include textStyle($darkBlue, 1rem, 400);
+        margin-bottom: 5px;
+    }
+
+    input {
+        border: 1px dashed black;
+        width: 200px;
+        padding: 5px 8px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        outline: none;
+    }
+}

@@ -1,0 +1,45 @@
+@use '../../../styles' as *;   
+   
+.explanations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label {
+        @include textStyle($darkBlue, 1rem, 400)
+    }
+    
+    textarea {
+        padding: 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border: 1px dashed;
+        height: 100px;
+        width: 200px;
+    }
+}
+
+.seo {
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+@include tablet {
+    .explanations {
+        textarea {
+            width: 400px;
+        }
+    }
+}
+
+@include mobile {
+    .explanations {
+        textarea {
+            width: 250px;
+        }
+    }
+}

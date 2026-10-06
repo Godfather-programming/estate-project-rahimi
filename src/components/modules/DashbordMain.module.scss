@@ -1,0 +1,46 @@
+@use '../../styles' as *;
+
+.container {
+    h2 {
+        @include textStyle($darkBlue, 1.5rem, 400);
+    }
+
+    p {
+        margin-top: 20px;
+        @include textStyle($textColor, 1rem, 300);
+    }
+
+    .date {
+        margin-top: 120px;
+        padding: 5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        background-color: rgb(203, 230, 238);
+        width: fit-content;
+        @include textStyle(black, 0.8rem, 400);
+        
+        .history {
+        color: $darkBlue;
+        }
+}
+}
+
+@include tablet {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            margin-right: 20px;
+        }
+
+        .date {
+            margin-top: 25px;
+        }
+    }
+}

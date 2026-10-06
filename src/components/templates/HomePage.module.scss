@@ -1,0 +1,176 @@
+@use '../../styles' as *;
+
+.container {
+    min-height: 722px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    
+    h1 {
+        margin-top: 80px;
+        @include textStyle($darkBlue, 2.3rem, 900);
+    }
+}
+
+.types {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+
+    .type {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 2px 12px;
+        gap: 5px;
+        background-color: $lightBlue;
+        color: $darkBlue;
+
+        span {
+          font-weight: 500;
+          font-size: 0.9rem;
+          margin-top: 3px;
+        }
+    }
+
+}
+
+.kind:hover {
+    transition: all 0.2 ease-in;
+    -webkit-transition: all 0.2 ease-in;
+    -moz-transition: all 0.2 ease-in;
+    -ms-transition: all 0.2 ease-in;
+    -o-transition: all 0.2 ease-in;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+}
+
+.categories {
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .category {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background-color: #fff;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+        padding: 10px 10px 15px;
+        width: 250px;
+    }
+
+    img {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    span {
+        @include textStyle($darkBlue, 1rem , 400)
+    }
+}
+
+.cities {
+    text-align: center;
+    margin-top: 80px;
+    width: 100%;
+
+    h2 {
+        @include textStyle($darkBlue, 1.7rem, 500);
+    }
+}
+
+.wrapper {
+    margin-top: 25px;
+    width: 100%;
+    display: grid;
+    justify-items: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 30px;
+
+    .town {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        width: 100%;
+        background-color: $lightBlue;
+        padding: 5px 5px;
+
+        span:first-child {
+            margin-top: 4px;
+        }
+        
+        span:last-child {
+            @include textStyle($darkBlue, 1rem, 500);
+        }
+    }
+  }
+
+@include desktop {
+  .categories {
+    grid-template-columns: 1fr 1fr;
+    width: 550px;
+     
+    .category {
+     width: 250px;
+    }
+  }
+
+   .wrapper {
+     margin-bottom: 25px;
+   }
+}
+
+@include mobile {
+   .container {
+      h1 {
+       font-size: 1.5rem;
+      }
+   }
+
+   .types {
+    grid-template-columns: 1fr 1fr;
+   }
+
+    .categories {
+    grid-template-columns: 1fr; 
+    place-items: center;
+    }
+  
+    .wrapper {
+        margin-top: 15px;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+
+        .town {
+            width: 90%;
+        }
+    }
+}

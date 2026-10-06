@@ -1,0 +1,66 @@
+@use '../../styles' as *;
+
+.container {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    padding: 10px 10px 20px;
+}
+
+.user {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .email {
+        @include textStyle($textColor, 1rem, 400);
+        margin-top: 15px;
+    }
+
+    .line {
+        display: block;
+        height: 2px;
+        width: 90%;
+        background-color: gray;
+    }
+}
+
+.options {
+    padding-right: 15px;
+    margin-top: 30px;
+
+    a {
+        width: fit-content;
+    } 
+
+    li {
+        font-weight: 400;
+        list-style: none;
+        margin-top: 10px;
+    }
+
+}
+
+@include tablet {
+    .container {
+        text-align: center;
+        align-items: center;
+    }
+
+    .user {
+        .line {
+            width: 140px;
+        }
+    }
+
+    .options {
+        padding-right: 0;
+    }
+}

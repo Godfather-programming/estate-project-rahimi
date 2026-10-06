@@ -1,0 +1,22 @@
+@use '../../styles' as *;
+
+.exit {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 10px;
+    margin-top: 20px;
+    color: $red;
+    cursor: pointer;
+    
+    span {
+        font-weight: 400;
+        margin-top: 3px;
+    }
+}
+
+@include tablet {
+    .exit {
+        padding-right: 0;
+    }
+}

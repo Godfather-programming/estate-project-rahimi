@@ -1,0 +1,29 @@
+@use '../../styles' as *;
+
+.sharing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: rgb(233, 245, 244);
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+
+    span {
+        margin-top: 3px;
+    }
+
+    span:first-child {
+        margin-top: 7px;
+    }
+}
+
+.sharing:hover {
+    color: $darkBlue;
+}

@@ -1,0 +1,22 @@
+@use '../../../styles' as *;
+
+.register {
+    width: 100%;
+    margin: 20px 0 100px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 20px;
+    background-color: $darkBlue;
+    color: #eaeaea;
+    cursor: pointer;
+    padding: 8px;
+    @include textStyle(#eaeaea, 1rem, 500)
+}
+
+.link {
+    height: 30px;
+    margin-bottom: 120px;
+}

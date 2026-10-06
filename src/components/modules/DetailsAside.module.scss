@@ -1,0 +1,80 @@
+@use '../../styles' as *;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+}
+
+.estate {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(233, 245, 244);
+    width: 100%;
+    padding: 15px 0px 5px 0px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.phoneNumber {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    span:first-child {
+        margin-top: 3px;
+    }
+}
+
+.specifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233, 245, 244);
+    padding: 15px 0px 5px 0px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.category {
+    display: flex;
+    gap: 5px;
+}
+
+.Date {
+    display: flex;
+    gap: 6px;
+    
+    span:first-child {
+        margin-top: 2px;
+    }
+}
+
+.publish {
+    a {
+        @include flex-center();
+    }
+    
+    button {
+        width: 100%;
+    }
+}
+
+@include laptop {
+    .container {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,24 @@
+@use '../../../styles' as *;  
+
+.date {
+    input {
+      height: 20px;
+      margin-top: "6px";
+      outline: "none";
+      margin: "auto";
+      border: "1px dashed black";
+      padding: "12px";
+      width: "92px";
+      color: "gray";
+      border-radius: "5px";
+    }
+}
+
+@include mobile {
+    .date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

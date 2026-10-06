@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "real-state-student",
+			"path": "../../.."
+		},
+		{
+			"name": "real-state-main",
+			"path": "../../../../real-state-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "real-state-student"
+	}
+}

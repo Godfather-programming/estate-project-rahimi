@@ -1,0 +1,56 @@
+@use '../../styles' as *;
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    gap: 6%;
+
+    .aside {
+        background-color: #fafafa;
+        width: 156px;
+        padding: 20px 0 25px 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: 4px 4px 20px rgb(130, 174, 255);
+        height: 220px;
+    }
+
+    .main {
+        width: 81%;
+
+        .none {
+            margin-top: 20px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            padding: 10px;
+            @include textStyle($red, 1.2rem, 500);
+            background-color: #FFCDD2;
+        }
+    }
+}
+
+@include laptop {
+    .container {
+        margin-right: 3%;
+    }
+}
+
+@include tablet {
+    .container {
+        margin-right: 0;
+    }
+}
+
+@include mobile {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,97 @@
+@use '../../styles' as *;
+
+.container {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    .icon {
+        width: fit-content;
+        display: flex;
+        padding: 3px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        background-color: $blue;
+    }
+
+    .article {
+        margin-top: 10px;
+    }
+
+    .place {
+        display: flex;
+        align-items: center;
+        color: #8b8b8b;
+        position: relative;
+        left: 4px;
+
+        span:last-child {
+            margin-bottom: 4px;
+        }
+    }
+
+    .price {
+        color: #757575;
+    }
+
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $darkBlue;
+
+        span:last-child {
+            margin-top: 9px;
+        }
+    }
+}
+
+@include laptop {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+    }
+
+    .wrapper {
+        width: 250px;
+    }
+}
+
+@include tablet {
+    .container {
+        column-gap: 25px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@include mobile {
+    .container {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .wrapper {
+        width: 200px;
+    }
+}

@@ -1,0 +1,157 @@
+@use '../../styles' as *;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h3 {
+        @include textStyle($darkBlue, 1.2rem, 500);
+    }
+
+    .charactristics {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        span {
+            background-color: $blue;
+            color: $darkBlue;
+            padding: 4px 8px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+
+    }
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    
+    gap: 20px;
+    
+    button, a {
+        margin-top: 20px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: fit-content;
+        color: #fafafa;
+        background-color: #4CAF50;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    
+    button:first-child {
+        width: 60px;
+    }
+    
+    a {
+        background-color: #2196F3;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    button:last-child {
+        background-color: #EF5350;
+        display: flex;
+        gap: 5px;
+        padding: 5px 10px;
+        span {
+            margin-top: 5px;
+        }
+    }
+}
+
+.seo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+        margin-top: 15px;
+    }
+
+    .data {
+        display: flex;
+        gap: 10px;
+        
+        span {
+        padding: 8px;
+        // width: 100px;
+        background-color: #26C6DA;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        }
+    }
+
+}
+
+.line {
+    height: 2px;
+    background-color: $blue;
+    display: block;
+}
+
+.empty {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+    background-color: #EF9A9A;
+    @include textStyle($red, 1.2rem, 500);
+}
+
+@include tablet {
+    .container {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper {
+        .charactristics {
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .options {
+        button:first-child {
+            width: 100px;
+        }
+    }
+
+    .seo {
+        align-items: center;
+        text-align: center;
+        .data {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .line {
+        height: 3px;
+    }
+}

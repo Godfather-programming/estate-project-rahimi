@@ -1,0 +1,34 @@
+@use '../../styles' as *;
+
+.container {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    gap: 3%;
+
+    .aside {
+        width: 17%;
+    }
+
+    .main {
+        width: 80%;
+    }
+}
+
+@include tablet {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        .aside {
+            width: 180px;
+        }
+
+        .main {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+}

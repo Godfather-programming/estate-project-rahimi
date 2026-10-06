@@ -1,0 +1,46 @@
+@use '../styles' as *;
+
+.footer {
+    background-color: $darkBlue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .introduction {
+        p {
+            width: 78%;
+        }
+    }
+
+    .options {
+        text-wrap: nowrap;
+    }
+}
+
+@include mobile {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        .introduction {
+            p {
+                width: 100%;
+            }
+        }
+
+        .options {
+            margin-top: 10px; 
+            li {
+                margin-left: 30px;
+                width: 30px;
+            }
+        }
+    }
+}

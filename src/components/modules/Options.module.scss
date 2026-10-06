@@ -1,0 +1,13 @@
+@use '../../styles' as *;
+
+.container {
+    li {
+        margin-right: 15px;
+        padding-right: 0;
+        text-wrap: wrap;
+    }
+    
+    li::marker {
+        color: $darkBlue;
+    } 
+}

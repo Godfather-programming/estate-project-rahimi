@@ -1,0 +1,16 @@
+@mixin textStyle($color, $size, $weight) {
+   color: $color;
+   font-size: $size;
+   font-weight: $weight;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

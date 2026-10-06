@@ -1,0 +1,75 @@
+@use '../../styles' as *;
+
+.container {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    gap: 3%;
+
+    .aside {
+        width: 17%;
+        
+    }
+
+    .main {
+        width: 80%;
+    }
+}
+
+.record {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    @include textStyle($darkBlue, 1.4rem, 500);
+    background-color:#B3E5FC;
+    padding: 10px;
+}
+
+.wrapper {
+    margin-top: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@include tablet {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        .aside {
+            width: 180px;
+        }
+
+        .main {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
+    .record {
+        width: 400px;
+        text-align: center;
+        margin: 0 auto 0;
+    }
+
+    .wrapper {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@include mobile {
+    .record {
+        width: 250px;
+    }
+}

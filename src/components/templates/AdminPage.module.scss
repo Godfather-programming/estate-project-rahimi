@@ -1,0 +1,44 @@
+@use "../../styles" as *;
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  gap: 3%;
+  .aside {
+    width: 17%;
+  }
+
+  .main {
+    width: 80%;
+  }
+
+  .empty {
+    background-color: #ef9a9a;
+    @include textStyle($red, 1.2rem, 500);
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}
+
+@include tablet {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .aside {
+      width: 200px;
+    }
+
+    .main {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

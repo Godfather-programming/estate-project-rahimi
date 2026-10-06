@@ -1,0 +1,63 @@
+@use '../../styles' as *;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    
+    h2 {
+        @include textStyle($darkBlue, 1.8rem, 500);
+    }
+}
+  
+.form {
+  width: 250px;
+  margin: 15px 0 20px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  height: 380px;
+  border: 2px solid $darkBlue;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fafafa;
+
+  button {
+    @include textStyle(#fff, 1rem, 400);
+    background-color: $darkBlue;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}
+
+.situation {
+  display: flex; 
+  gap: 5px; 
+
+  div .entrance {
+    @include textStyle($darkBlue, 1rem, 400);
+  }
+ 
+  div .line {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: gray;
+    position: relative;
+    left: 2px;
+  }
+}
