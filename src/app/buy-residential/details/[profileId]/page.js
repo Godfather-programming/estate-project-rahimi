@@ -6,7 +6,7 @@ async function Details(props) {
   const { profileId } = await props.params;
 
   const res = await fetch(
-    `https://luminous-frangipane-1b2f8b.netlify.app/api/profile/details/${profileId}`,
+    `https://estate-project-rahimi.vercel.app/api/profile/details/${profileId}`,
     { method: "GET", headers: headers() }
   );
   const data = await res.json();
