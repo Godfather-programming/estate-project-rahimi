@@ -26,7 +26,7 @@ export const generateMetadata = async (props) => {
   await connectDB();
 
   const resSeo = await fetch(
-    `https://luminous-frangipane-1b2f8b.netlify.app/api/admin/${profileId}`,
+    `https://estate-project-rahimi.vercel.app/api/admin/${profileId}`,
     {
       method: "GET",
       headers: headers(),
